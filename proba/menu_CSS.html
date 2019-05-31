@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Mеню</title>
+  <style>
+    html body{
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-size: 1.2rem;
+    }
+    .menu > li{
+      background-color: darkturquoise;
+      color: brown;
+      display: inline-block;
+      position: relative;
+      cursor: pointer;
+    }
+    .podmenu{
+      list-style:none;
+      display: none;
+      position: absolute;
+      z-index: 10;
+    }
+    .menu > li:hover > ul{
+      display:block;
+    }
+    /* ============ div========= */
+    .div1{
+      width: 200px;
+      height: 200px;
+      background-color: chartreuse;
+      position: relative;
+      margin: 100px;
+    }
+    .div2{
+      width: 20px;
+      height: 20px;
+      background-color: aqua;
+      color: gold;
+      position: absolute;
+      left: 200px;
+      top: -20px;
+      border-radius: 50%;
+    }
+
+  </style>
+</head>
+<body>
+  <div>
+    <ul class="menu">
+      <li>Пункт меню № 1
+        <ul class="podmenu">
+          <li><a href="#"> Подменю 1</a></li>
+          <li><a href="#"> Подменю 2</a></li>
+          <li><a href="#"> Подменю 3</a></li>
+          <li><a href="#"> Подменю 4</a></li>
+          <li><a href="#"> Подменю 5</a></li>
+        </ul>
+      </li>
+      <li>Пункт меню № 2
+        <ul class="podmenu">
+          <li>Подменю 1</li>
+          <li>Подменю 2</li>
+          <li>Подменю 3</li>
+          <li>Подменю 4</li>
+          <li>Подменю 5</li>
+        </ul>
+      </li>
+      <li>Пункт меню № 3
+        <ul class="podmenu">
+          <li>Подменю 1</li>
+          <li>Подменю 2</li>
+          <li>Подменю 3</li>
+          <li>Подменю 4</li>
+          <li>Подменю 5</li>
+          </ul>
+      </li>
+      <li>Пункт меню № 4
+        <ul class="podmenu">
+          <li>Подменю 1</li>
+          <li>Подменю 2</li>
+          <li>Подменю 3</li>
+          <li>Подменю 4</li>
+          <li>Подменю 5</li>
+        </ul>
+      </li>
+      <li>Пункт меню № 5
+        <ul class="podmenu">
+          <li>Подменю 1</li>
+          <li>Подменю 2</li>
+          <li>Подменю 3</li>
+          <li>Подменю 4</li>
+          <li>Подменю 5</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <div class="div1">
+    <div class="div2">X</div>
+  </div>
+</body>
+</html>
