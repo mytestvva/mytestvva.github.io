@@ -1,0 +1,82 @@
+.container{
+  background-color: grey;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.2em;
+  padding: 10px;
+}
+header{
+  display: grid;
+  /* делаем 2 колонки */
+  grid-template-columns: 1fr 3fr;
+  /* Отступы между колонками */
+  grid-column-gap: 25px;
+  /* вертикально по центру */
+  align-items:center;
+  background-color: darkslategray;
+}
+nav{
+  display: flex;
+  justify-content: flex-end;
+}
+.menu > li{
+  display: inline-block;
+}
+a{
+  text-decoration: none;
+  color: #000;
+}
+.section_1{
+  display: grid;
+  /* делаем 2 колонки */
+  grid-template-columns: 1fr 1fr;
+  /* Отступы между колонками */
+  grid-column-gap: 25px;
+  /* вертикально по центру */
+  align-items:start;
+  margin-top: 20px;
+}
+figure, h1, h4, p{
+  margin: 0;
+}
+figure > img{
+  width: 100%;
+}
+.section_1 > article{
+  text-align: justify;
+}
+main a{
+  font-size: 0.8em;
+}
+.news{
+  display: grid;
+  /* делаем 2 колонки */
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  /* Отступы между колонками */
+  grid-column-gap: 15px;
+  /* вертикально по центру */
+  align-items:start;
+}
+.news_img > img{
+  width: 100%;
+}
+ /*Используем медиа-запросы для выбранного девайса*/
+ @media (max-width: 640px) {
+  .section_1{
+    grid-template-columns: 1fr;
+    /* схема отображения колонок*/ 
+    grid-template-rows: 1fr;
+    /*Размещаем наши элементы шаблона, используя колонки*/
+    grid-template-areas: 
+      "div"               
+  }
+  /* убираем статью */
+  article{
+    display: none;
+  }
+  .news{
+    grid-template-columns: 1fr;
+    /* схема отображения колонок*/ 
+    grid-template-rows: repeat(4, 1fr);
+    /* Размещаем наши элементы шаблона, используя колонки*/
+  }
+}

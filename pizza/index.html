@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Pizza zadanie 1</title>
+  <link rel="stylesheet" href="TWbootstrap%204.0.0/css/bootstrap.min.css">
+  <link href="css/main.css" rel="stylesheet" />
+</head>
+<body>
+  <div class="container">
+    <div class="row justify-content-center ">
+      <div class="col-6">
+        <form name="myform">
+          <div class="form-group">
+            <label class="text-primary" for="example_pizza">Пицца:</label>
+            <select class="form-control" id="example_pizza" name="pizza">
+            <option value="50">Маленькая 50</option>
+            <option value="70">Средняя 70</option>
+            <option value="100">Большая 100</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="text-primary" for="example_component">Дополнительно:</label>
+            <select multiple class="form-control" id="example_component" name="component">
+              <option value="10">грибы 10</option>
+              <option value="20">бекон 20</option>
+              <option value="10">помидоры 10</option>
+              <option value="15">сыр 15</option>
+              <option value="15">оливки 15</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="text-primary" for="example_component">Имя:</label>
+            <input type="text" id="example_firstName" name="firstName">
+          </div>
+          <div class="form-group">
+            <label class="text-primary" for="example_phone">Телефон:</label>
+            <input  id="example_phone" type="phone" name="tlf" placeholder="000-00-00">
+          </div>
+          <div class="form-group">
+            <label class="text-primary" for="example_phone">Адрес:</label>
+            <input  id="example_adres" type="text" name="adres">
+          </div>
+            
+          <label class="text-primary" for="zak">Оплатить:</label>
+          <input class="btn btn-outline-primary" id="zak" type="submit" name="zakaz">
+          
+          
+        </form>
+        <!-- <div class="alert alert-primary">PROBA</div>
+        <button class="btn btn-success">Обновить</button>
+        <p class="text-primary">Загрузка данных в консоль</p> -->
+      </div>
+    </div>
+  </div>
+  <script src="js/main_script.js" type="text/javascript"></script>
+  <!--<script src="TWbootstrap%204.0.0/js/bootstrap.bundle.min.js" type="text/javascript"></script>--> 
+</body>
+</html>

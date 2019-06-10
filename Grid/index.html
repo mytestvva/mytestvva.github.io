@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/style.css">
+  <title>SPORT Grid</title>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div>
+        <img src="img/logo.png" alt="logo">
+      </div>
+      <nav>
+        <ul class="menu">
+          <li><a href="#">Home</a></li>          
+          <li><a href="#">News</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Block</a></li>          
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="section_1">
+        <div class="big_img">
+          <figure>
+            <img src="img/section_1.jpg" alt="img-1">
+            <figcaption>
+              о том, почему союз «Динамо» и Хацкевича не может окончиться триумфом
+              <a id="to_show" href="#c1">read more &raquo;</a> <!-- якорь-->
+            </figcaption>
+          </figure>
+          
+        </div>
+        <article>          
+          <h1><a name="c1"></a>
+          Игорь Суркис и зона комфорта.
+          </h1>
+          <p>Президент «Динамо» Игорь Суркис решил дать еще один шанс Александру Хацкевичу. Белорусский тренер, контракт с которым истек в последние дни мая, подписал с киевским клубом новый договор на два года.</p>
+          <p>О подробностях этого соглашения стороны не распространяются. Причем не только о финансовой стороне, но и о конкретных задачах. Хотя эта самая финансовая сторона в данном контексте интересует широкую динамовскую общественность меньше всего. Главное ведь – конкретные задачи и способы их решения. Однако для тех, кому все-таки не безразлично, каковы условия прописаны в новом соглашении Александра Николаевича и Игоря Михайловича, сообщим, что они остались прежними. По просочившейся неофициальной информации, главный тренер «Динамо» будет зарабатывать порядка шестидесяти тысяч евро в месяц.</p>
+          <a href="#">read more &raquo;</a>
+        </article>
+      </section>
+      <h2>
+        News
+      </h2>
+      <section class="news">
+        <div class="news_1">
+          <div class="news_img">
+            <img src="img/section_2_1.jpg" alt="img2-1">
+          </div>
+          <div>
+            <h4>Волынь – Карпаты. Прогноз и анонс на матч плей-офф чемпионата Украины</h4>
+            <p>Решающий поединок за место в украинской Премьер-лиге <small>-Футбол</small></p>
+            <a href="#">read more &raquo;</a>
+          </div>          
+        </div>
+        <div class="news_2">
+          <div class="news_img">
+            <img src="img/section_2_2.jpg" alt="img2-2">
+          </div>  
+          <div>
+            <h4>Гран-при Канады. Шанс для Феррари и любимая трасса Хэмилтона</h4>
+            <p>Превью этапа Формулы-1 в Канаде<small> -Авто/мото</small></p>
+            <a href="#">read more &raquo;</a>
+          </div>          
+        </div>
+        <div class="news_3">
+          <div class="news_img">
+            <img src="img/section_2_3.jpg" alt="img2-3">
+          </div>  
+          <div>
+            <h4>НХЛ. Сент-Луис - в одной победе от завоевания Кубка Стэнли</h4>
+            <p>Блюзмены близки к триумфу <small>-Хоккей</small></p>
+            <a href="#">read more &raquo;</a>
+          </div>          
+        </div>
+        <div class="news_4">
+          <div class="news_img">
+            <img src="img/section_2_4.jpg" alt="img2-4">
+          </div>  
+          <div>
+            <h4>UFC 238. Генри Сехудо – Марлон Мораес. Прогноз и анонс на бой</h4>
+            <p>Турнир UFC 238 состоится в Чикаго в ночь на воскресенье <small>-MMA</small></p>
+            <a href="#">read more &raquo;</a>
+          </div>          
+        </div>
+      </section>
+    </main>
+  </div>
+  
+  <script type="text/javascript">
+  window.addEventListener ("load", handler, false);
+  function handler () {
+    document.getElementById("to_show").onclick = function() {
+      // при ширине экрана 640 и меньше показываем и прячем статейку в блоке "article"
+      if (screen.width <= 640) {
+        if (document.getElementsByTagName("article")[0].style.display == "none") {
+        document.getElementsByTagName("article")[0].style.display="block";
+        }
+        else {
+          document.getElementsByTagName("article")[0].style.display = "none";
+        }
+      }    
+    }
+  }
+  </script>
+</body>
+</html>
