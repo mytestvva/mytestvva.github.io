@@ -1,0 +1,19 @@
+﻿.section_about {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+  grid-column-gap: 10px;
+  background-color: #d8d8d8;
+
+  .wrapper_left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+    font-size: 1.2em;
+    text-align: justify;
+  }
+  .wrapper_right > img {
+      width: 100%;
+    }  
+}

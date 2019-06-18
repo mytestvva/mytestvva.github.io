@@ -1,0 +1,13 @@
+// щаблоны
+@mixin btn-name ($color) {//анимация кнопки
+	background-color: $color;
+	box-shadow: 3px 3px 7px darken($color, 3);
+
+	&:hover {
+		background-color: darken($color, 3);
+    box-shadow: 3px 3px 7px darken($color, 15);
+    color: darken(#fff, 25);
+	}
+}
+
+//transition: all 0.5s linear;

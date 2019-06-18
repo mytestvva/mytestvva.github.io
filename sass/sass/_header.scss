@@ -1,0 +1,63 @@
+@import "mixin";
+header {
+  background-color: brown;
+  background-image: url("../img/header.jpg" );
+  background-size: cover;
+  height: $size_x + vh;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+    &::before { //псевдо элемент для создания тумана над бордером
+        content: "";
+        background-color: gray;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        opacity: 0.5;
+    }
+
+    .header-wrapper { // поднять кнопки над туманом
+        z-index: 10;
+    }
+
+    .header-wrapper > h1 {
+        color: white;
+        font-size: 3em;
+        margin: 0;
+        margin-bottom: 1em;
+    }
+
+    .header-wrapper > .header-btn {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        text-align: center;
+        grid-column-gap: 10px;
+
+        .btn {
+            display: inline-block;
+            width: 100%;
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.5em;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.5s linear;
+
+            &-html {//подключаем шаблон из mixin
+                @include btn-name(orange);
+            }
+
+            &-css {
+                @include btn-name(blue);
+            }
+
+            &-js {
+                @include btn-name(green);
+            }
+        }
+    }
+}

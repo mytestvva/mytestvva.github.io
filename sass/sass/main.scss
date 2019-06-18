@@ -1,0 +1,108 @@
+$colorG: gray;
+$colorB: brown;
+$size_z: 0;
+$size_m: 10;
+$size_x: 100;
+
+body {
+	font-family: verdana;
+    padding: $size_z;
+    margin: $size_z;
+}
+
+@import "header";
+@import "section_about";
+@import "section_form";
+@import "section_portfolio";
+
+footer {
+  background-color: $colorB;
+  color:#fff;
+  font-size: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s linear;
+  padding: 10px;
+
+  h3 {
+    margin: 0;
+  }
+  
+  img:hover {
+    transform: scale(1.5);
+    cursor: pointer;
+    opacity: 0.8;
+  }
+}
+
+/*Используем медиа-запросы для выбранного девайса*/
+@media screen and(max-width: 640px) {
+  header {
+    .header-wrapper {
+      width: 100%;
+      h1 {
+        color:yellow;
+        font-size: 2em;
+        text-align: center;
+      }
+      .header-btn {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+        height: 8em;
+      }
+    }
+  }
+  main {
+    .section_about {
+      display: grid;
+      grid-template-columns: 1fr;
+      .wrapper_left {
+        display: none;
+      }
+    }
+    .section_form {
+      .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+      }
+    }
+    .section_portfolio {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-gap: 10px;
+      .items {
+        display: block;
+        &:nth-child(1) {
+          grid-column: 1/2;
+        }
+        &:nth-child(2) {
+          grid-column: 1/2;
+        }
+        &:nth-child(3) {
+          grid-column: 1/2;
+        }
+        &:nth-child(4) {
+          grid-column: 1/2;
+        }
+        &:nth-child(5) {
+          grid-column: 1/2;
+        }
+        &:nth-child(6) {
+          grid-column: 1/2;
+        }
+        &:nth-child(7) {
+          grid-column: 1/2;
+        }
+        &:nth-child(8) {
+          grid-column: 1/2;
+        }
+      }
+    }
+  }
+  
+
+}
