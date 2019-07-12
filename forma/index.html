@@ -18,10 +18,12 @@
             <label for="exampleInputEmail1">Email address</label>
             <input type="email" class="form-control" name="_replyto" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
             <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-          </div>          
+          </div> 
+          <input type="hidden" name="_subject" value="New submission!"> <!-- тема письма--> 
+          <!-- <input type="hidden" name="_next" value="//site.io/thanks.html"/> -->  <!-- переход после отправки письма-->       
           <div class="form-group">
             <label for="logTextarea">Сообщение</label>
-            <textarea class="form-control" id="logTextarea" rows="10" name="message" placeholder="Message"></textarea>
+            <textarea class="form-control" id="logTextarea" rows="4" name="message" placeholder="Message"></textarea>
           </div>
           <button type="submit" class="btn btn-primary" value="Send">Submit</button>
         </form>
