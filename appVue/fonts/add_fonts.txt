@@ -1,0 +1,19 @@
+/*подключаем шрифт*/
+@font-face{
+  font-family: merriweather;
+  src: url(font/Merriweather-Regular.ttf)
+}
+@font-face{
+  font-family: merriweather;
+  font-style: italic;
+  src: url(font/Merriweather-Italic.ttf)
+}
+@font-face{
+  font-family: merriweather;
+  font-weight: bold;
+  src: url(font/Merriweather-Bold.ttf)
+}
+/* font-family: merriweather, Verdana sans-serif; */
+/* цвет фона  шапки #f7f7f7   подвала #fffbf1*/
+/* цвет шрифта #FF7400 */
+/* -------------------------------------------------- */

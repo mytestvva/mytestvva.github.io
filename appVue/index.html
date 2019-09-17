@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/main.css">
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.16.2/axios.js"></script>
+  <!-- <script src="https://unpkg.com/axios/dist/axios.min.js"></script> -->
+  <script type="text/javascript" src="js/vue_script.js"></script>
+  <title>Рубли СССР</title>
+</head>
+<body>
+  <div id="app" class="container">
+    <header class="row">
+      <div class="col-12">
+        <nav class="navbar navbar-lg navbar-light bg-light">
+          <h1 v-text='sitename'></h1>
+          <form class="form-inline">
+            <button type="button" class="btn btn-outline-dark btn-lg font-weight-bold" v-on:click="showCheckout"><span class="badge badge-primary">{{ cartItemCount }}</span> Корзина</button>
+          </form>
+        </nav>
+      </div>
+    </header>
+    <main class="row">
+      <div class="col-12">
+        <div v-if="showProduct">      <!--v-if="showProduct"--> 
+          <div v-for="product in sortedProducts">  <!-- v-for -->
+            <div class="row">
+              <div class="col-md-4"> <!-- img -->
+                <figure>
+                  <img v-bind:src="product.img_path_a" v-if="showAvers" v-on:click="chengeImg">
+                  <img v-bind:src="product.img_path_r" v-else v-on:click="chengeImg">
+                </figure>         
+              </div> <!-- END img -->
+              <div class="col-md-8"> <!-- Opisanie -->
+                <h2 v-text="product.title"></h2>
+                <p v-html="product.description"></p>
+                <p v-text="product.year"></p>
+                <p class="price">{{product.price | formatPrice}}</p>
+                <button type="button" class="btn btn-primary" v-on:click="addToCart(product)" v-if="canAddToCart(product)">Добавить в корзину</button>
+                <button type="button" class="btn btn-primary" disabled v-else>Добавить в корзину</button>
+                <span class="inventory-message" v-if="product.availableInventory - cartCount(product.id) === 0">All Out!</span>
+                <span class="inventory-message" v-else-if="product.availableInventory - cartCount(product.id) < 2">Only {{product.availableInventory - cartCount(product.id)}} left!</span>
+                <span class="inventory-message" v-else>Buy Now!</span>
+                <div class="rating">
+                  <span v-bind:class="{'rating-active': checkRating(n, product)}" v-for="n in 5">&#9733;</span>
+                </div>                
+              </div> <!-- END Opisanie -->             
+            </div>
+            <hr />
+          </div> <!-- END v-for -->          
+        </div> <!-- END v-if="showProduct"-->
+        <div v-else class="row"> <!-- v-else -->
+          <div class="col-12">
+            <form>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="inputFirstName"><strong>First Name:</strong></label>
+                  <input  v-model.trim="order.firstName" type="text" class="form-control" id="inputFirstName" placeholder="First Name">
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="inputLastName"><strong>Last Name:</strong></label>
+                  <input v-model.trim="order.lastName" type="text" class="form-control" id="inputLastName" placeholder="Last Name">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="inputAddress"><strong>Adress:</strong></label>
+                <input v-model.trim="order.adress" type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+              </div>
+              <div class="form-group">
+                <label for="inputCity"><strong>City:</strong></label>
+                <input v-model.trim="order.city" type="text" class="form-control" id="inputCity" placeholder="City">
+              </div>
+              <div class="form-row">
+                <div class="form-group col-md-2">
+                  <label for="inputState"><strong>State:</strong></label>
+                  <select v-model="order.state" id="inputState" class="form-control">
+                    <option disabled value="">State</option>
+                    <option v-for="(state, key) in states" v-bind:value="state">{{key}}</option>
+                  </select>
+                </div>
+                <div class="form-group col-md-6 offset-md-4">
+                  <label for="inputZip"><strong>Zip / Postal code</strong></label>
+                  <input v-model.number="order.zip" type="number" class="form-control" id="inputZip" placeholder="54321">
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group col-md-4">
+                  <div class="form-check">
+                    <input v-model="order.gift" v-bind:true-value="order.sendGift" v-bind:false-value="order.dontSendGift" class="form-check-input" type="checkbox" id="gift" value="true">
+                    <label class="form-check-label" for="gift">{{order.gift}}</label>
+                  </div>
+                </div>
+                <div class="form-group col-md-4 offset-md-2">
+                  <div class="form-check form-check-inline">                
+                    <input v-model="order.method" v-bind:value="order.home" type="radio" class="form-check-input" id="home">                        
+                    <label class="form-check-label" for="home">Home </label>                    
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input v-model="order.method" v-bind:value="order.business" type="radio" class="form-check-input" id="business">
+                    <label class="form-check-label" for="business">Business </label>                    
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col">
+                  <button v-on:click="submitForm" type="submit" class="btn btn-secondary btn-block">Plase Order</button>
+                </div>
+              </div>
+                  
+              <div class="form-row">
+                <div class="col-md-12 verify bg-light">
+                  <pre>
+                    First Name: {{order.firstName}}
+                     Last Name: {{order.lastName}}
+                        Adress: {{order.adress}}
+                          City: {{order.city}}
+                           Zip: {{order.zip}}
+                         State: {{order.state}}
+                        Method: {{order.method}}
+                          Gift: {{order.gift}}
+                  </pre>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>  
+</body>
+</html>

@@ -1,0 +1,28 @@
+@mixin flex-row () {
+  display: flex;
+  justify-content: flex-start;
+}
+
+@mixin stycky () {
+  position: sticky;
+  top: 0;
+}
+
+@mixin add-fonts () {
+  /*подключаем шрифт*/
+  @font-face{
+    font-family: "PlayfairDisplay";
+    src: url("../fonts/PlayfairDisplay-Regular.ttf");
+  }
+  @font-face{
+    font-family: "PlayfairDisplay";
+    font-style: italic;
+    src: url("../fonts/PlayfairDisplay-Italic.ttf");
+  }
+  @font-face{
+    font-family: "PlayfairDisplay";
+    font-weight: bold;
+    src: url("../fonts/PlayfairDisplay-Bold.ttf");
+  }
+  // font-family: PlayfairDisplay;
+}
