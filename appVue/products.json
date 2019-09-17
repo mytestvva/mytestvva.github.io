@@ -1,0 +1,180 @@
+{
+	"products":[
+    {
+      "id": 1001,
+      "title": "70 лет Великой Октябрьской социалистической революции",
+      "description": "<strong>Масса:</strong> 12,8 г.<br /> <strong>Диаметр:</strong> 31 мм.<br /> <strong>Гурт:</strong> Надпись &laquo;ОДИН РУБЛЬ&raquo;, разделенная двумя квадратными точками.",
+      "img_path_a": "../img/ussr_1rub_70let_vosr_1987_a.jpg",
+      "img_path_r": "../img/ussr_1rub_70let_vosr_1987_r.jpg",
+      "year": "Серия вышла 20 октября 1987 года.",
+      "price": 100, 
+      "availableInventory": 1, 
+      "rating": 4
+    },
+    {
+      "id": 1002,
+      "title": "60 лет Советской власти (1917-1977)",
+      "description": "<strong>Масса:</strong> 12,8 г.<br /> <strong>Диаметр:</strong> 31 мм.<br /> <strong>Гурт:</strong> Надпись &laquo;ОДИН РУБЛЬ&raquo;, разделенная двумя квадратными точками.",
+      "img_path_a": "../img/ussr_1rub_avrora_1977_a.jpg",
+      "img_path_r": "../img/ussr_1rub_avrora_1977_r.jpg",
+      "year": "Дата выпуска: 1 ноября 1977 г.",
+      "price": 100, 
+      "availableInventory": 1,
+      "rating": 4
+    },
+    {
+      "id": 1003,
+      "title": "Бородинская панорама",
+      "description": "<strong>Масса:</strong> 12,8 г.<br /> <strong>Диаметр:</strong> 31 мм.<br /> <strong>Гурт:</strong> две вдавленные надписи &laquo;ОДИН РУБЛЬ&raquo;, между ними две вдавленные квадратные точки.",
+      "img_path_a": "../img/ussr_1rub_borodino_1987_a.jpg",
+      "img_path_r": "../img/ussr_1rub_borodino_1987_r.jpg",
+      "year": "Дата выпуска: 07.09.1987",
+      "price": 100, 
+      "availableInventory": 1, 
+      "rating": 4
+    },
+    {
+      "id": 1004,
+      "title": "130 лет со дня рождения основоположника отечественной космонавтики К. Э. Циолковского",
+      "description": "<strong>Масса:</strong> 12,8 г.<br /> <strong>Диаметр:</strong> 31 мм.<br /> <strong>Гурт:</strong> две вдавленные надписи &laquo;ОДИН РУБЛЬ&raquo;, между ними две вдавленные квадратные точки.",
+      "img_path_a": "../img/ussr_1rub_ciolkovskii_1987_a.jpg",
+      "img_path_r": "../img/ussr_1rub_ciolkovskii_1987_r.jpg",
+      "year": "Дата выпуска: 17.09.1987",
+      "price": 100, 
+      "availableInventory": 1, 
+      "rating": 4
+    },
+    {
+      "id": 1005,
+      "title": "165 лет со дня рождения Фридриха Энгельса",
+      "description": "<strong>Масса:</strong> 12,8 г.<br /> <strong>Диаметр:</strong> 31 мм.<br /> <strong>Гурт:</strong> две вдавленные надписи &laquo;ОДИН РУБЛЬ&raquo;, между ними две вдавленные квадратные точки.",
+      "img_path_a": "../img/ussr_1rub_engels_1985_a.jpg",
+      "img_path_r": "../img/ussr_1rub_engels_1985_r.jpg",
+      "year": "Дата выпуска: 28.11.1985",
+      "price": 100, 
+      "availableInventory": 1, 
+      "rating": 4
+    },
+    {
+      "id": 1006,
+      "title": "XII Всемирный фестиваль молодежи и студентов в Москве",
+      "description": "<strong>Масса:</strong> 12,8 г.<br /> <strong>Диаметр:</strong> 31 мм.<br /> <strong>Гурт:</strong> две вдавленные надписи &laquo;ОДИН РУБЛЬ&raquo;, между ними две вдавленные квадратные точки.",
+      "img_path_a": "../img/ussr_1rub_festival_1985_a.jpg",
+      "img_path_r": "../img/ussr_1rub_festival_1985_r.jpg",
+      "year": "Дата выпуска: 25.06.1985",
+      "price": 100, 
+      "availableInventory": 1, 
+      "rating": 4
+    },
+    {
+      "id": 1007,
+      "title": "Международный год Мира",
+      "description": "<strong>Масса:</strong> 12,8 г.<br /> <strong>Диаметр:</strong> 31 мм.<br /> <strong>Гурт:</strong> две вдавленные надписи &laquo;ОДИН РУБЛЬ&raquo;, между ними две вдавленные квадратные точки.",
+      "img_path_a": "../img/ussr_1rub_golub_mira_1986_a.jpg",
+      "img_path_r": "../img/ussr_1rub_golub_mira_1986_r.jpg",
+      "year": "Дата выпуска: 18.03.1986",
+      "price": 100, 
+      "availableInventory": 1,
+      "rating": 4
+    },
+    {
+      "id": 1008,
+      "title": "120 лет со дня рождения руского советского писателя А.М.Горького",
+      "description": "<strong>Масса:</strong> 12,8 г.<br /> <strong>Диаметр:</strong> 31 мм.<br /> <strong>Гурт:</strong> две вдавленные надписи &laquo;ОДИН РУБЛЬ&raquo;, между ними две вдавленные квадратные точки.",
+      "img_path_a": "../img/ussr_1rub_gorkii_1988_a.jpg",
+      "img_path_r": "../img/ussr_1rub_gorkii_1988_r.jpg",
+      "year": "Дата выпуска: 23.03.1988",
+      "price": 100, 
+      "availableInventory": 1,
+      "rating": 4
+    },
+    {
+      "id": 1009,
+      "title": "100 лет со дня рождения В. И. Ленина",
+      "description": "<strong>Масса:</strong> 12,8 г.<br /> <strong>Диаметр:</strong> 31 мм.<br /> <strong>Гурт:</strong> повторяющаяся десять раз группа из вдавленной пятиконечной звёзды и круглой точки.",
+      "img_path_a": "../img/ussr_1rub_lenin_1970_a.jpg",
+      "img_path_r": "../img/ussr_1rub_lenin_1970_r.jpg",
+      "year": "Дата выпуска: 22.04.1970",
+      "price": 100, 
+      "availableInventory": 3,
+      "rating": 4
+    },
+    {
+      "id": 1010,
+      "title": "275 лет со дня рождения великого русского ученого М.В.Ломоносова",
+      "description": "<strong>Масса:</strong> 12,8 г.<br /> <strong>Диаметр:</strong> 31 мм.<br /> <strong>Гурт:</strong> две вдавленные надписи &laquo;ОДИН РУБЛЬ&raquo;, между ними две вдавленные квадратные точки.",
+      "img_path_a": "../img/ussr_1rub_lomonosovi_1986_a.jpg",
+      "img_path_r": "../img/ussr_1rub_lomonosovi_1986_r.jpg",
+      "year": "Дата выпуска: 19.11.1986",
+      "price": 100,
+      "availableInventory": 2,
+      "rating": 4
+    },
+    {
+      "id": 1011,
+      "title": "165 лет со дня рождения Карла Маркса 165 лет со дня рождения и 100 лет со дня смерти Карла Маркса",
+      "description": "<strong>Масса:</strong> 12,8 г.<br /> <strong>Диаметр:</strong> 31 мм.<br /> <strong>Гурт:</strong> две вдавленные надписи &laquo;ОДИН РУБЛЬ&raquo;, между ними две вдавленные квадратные точки.",
+      "img_path_a": "../img/ussr_1rub_marks_1983_a.jpg",
+      "img_path_r": "../img/ussr_1rub_marks_1983_r.jpg",
+      "year": "Дата выпуска: 29.03.1983",
+      "price": 100, 
+      "availableInventory": 1,
+      "rating": 4
+    },
+    {
+      "id": 1012,
+      "title": "40 лет Победы советского народа в Великой Отечественной войне",
+      "description": "<strong>Масса:</strong> 12,8 г.<br /> <strong>Диаметр:</strong> 31 мм.<br /> <strong>Гурт:</strong> две вдавленные надписи &laquo;ОДИН РУБЛЬ&raquo;, между ними две вдавленные квадратные точки.",
+      "img_path_a": "../img/ussr_1rub_ov_1985_a.jpg",
+      "img_path_r": "../img/ussr_1rub_ov_1985_r.jpg",
+      "year": "Дата выпуска: 23.04.1985",
+      "price": 100, 
+      "availableInventory": 1, 
+      "rating": 4
+    },
+    {
+      "id": 1013,
+      "title": "125-летие со дня рождения русского физика А. С. Попова",
+      "description": "<strong>Масса:</strong> 12,8 г.<br /> <strong>Диаметр:</strong> 31 мм.<br /> <strong>Гурт:</strong> две вдавленные надписи &laquo;ОДИН РУБЛЬ&raquo;, между ними две вдавленные квадратные точки.",
+      "img_path_a": "../img/ussr_1rub_popov_1984_a.jpg",
+      "img_path_r": "../img/ussr_1rub_popov_1984_r.jpg",
+      "year": "Дата выпуска: 16.03.1984",
+      "price": 100, 
+      "availableInventory": 1,
+      "rating": 4
+    },
+    {
+      "id": 1014,
+      "title": "160 лет со дня рождения руского писателя Л.Н. Толстого",
+      "description": "<strong>Масса:</strong> 12,8 г.<br /> <strong>Диаметр:</strong> 31 мм.<br /> <strong>Гурт:</strong> две вдавленные надписи &laquo;ОДИН РУБЛЬ&raquo;, между ними две вдавленные квадратные точки.",
+      "img_path_a": "../img/ussr_1rub_tolstoi_1988_a.jpg",
+      "img_path_r": "../img/ussr_1rub_tolstoi_1988_r.jpg",
+      "year": "Дата выпуска: 06.09.1988",
+      "price": 100, 
+      "availableInventory": 1, 
+      "rating": 4
+    },
+    {
+      "id": 1015,
+      "title": "Архангельский собор в Москве",
+      "description": "<strong>Масса:</strong> 19,8 г.<br /> <strong>Диаметр:</strong> 35 мм.<br /> <strong>Гурт:</strong> две вдавленные надписи &laquo;ПЯТЬ РУБЛЕЙ&raquo;, между ними две вдавленные пятиконечные звезды.",
+      "img_path_a": "../img/ussr_5rub_mockva_1991_a.jpg",
+      "img_path_r": "../img/ussr_5rub_mockva_1991_r.jpg",
+      "year": "Дата выпуска: 25.07.1991",
+      "price": 100, 
+      "availableInventory": 1, 
+      "rating": 4
+    },
+    {
+      "id": 10,
+      "title": "ШАБЛОН",
+      "description": "<strong>Масса:</strong> 12,8 г.<br /> <strong>Диаметр:</strong> 31 мм.<br /> <strong>Гурт:</strong>  &laquo;ОДИН РУБЛЬ&raquo;, .",
+      "img_path_a": "../",
+      "img_path_r": "../",
+      "year": "",
+      "price": 100,
+      "availableInventory": 3,
+      "rating": 4
+    }
+  ]
+}
