@@ -48,7 +48,7 @@
         }
       },
       created: function () {//при создании объекта Vue делаем запрос к json файлу
-        axios.get("../img/ussr_rubli.json")
+        axios.get("img/ussr_rubli.json")
           .then((Response) => {
             this.products = Response.data.ussr_rub;
             console.log(this.products);//для контроля ответа
