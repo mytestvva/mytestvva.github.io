@@ -1,0 +1,172 @@
+{
+  "silver_coins":[
+    {
+      "id": 101,
+      "title": "Германия 1 марка, 1874",
+      "description": "<strong>Масса:</strong> 5.55 г.<br /> <strong>Диаметр:</strong> 24 мм.<br /> <strong>Гурт:</strong> Рубчатый.",
+      "img_path_a": "../coins_silver/1m_silver_1874_a.jpg",
+      "img_path_r": "../coins_silver/1m_silver_1874_r.jpg",
+      "year": "1874",
+      "material": "Серебро 0.900",
+      "price": 100,
+      "availableInventory": 1,
+      "rating": 3
+    },
+    {
+      "id": 102,
+      "title": "Германия - Третий рейх 2 рейхсмарки, 1936-1939",
+      "description": "<strong>Масса:</strong> 8 г.<br /> <strong>Диаметр:</strong> 25 мм.<br /> <strong>Гурт:</strong> Надпись 'GEMEINNUTZ GEHT VOR EIGENNUTZ'.",
+      "img_path_a": "../coins_silver/2rm_silver_1938_a.jpg",
+      "img_path_r": "../coins_silver/2rm_silver_1938_r.jpg",
+      "year": "1938",
+      "material": "Серебро 0.625",
+      "price": 100,
+      "availableInventory": 1,
+      "rating": 2
+    },
+    {
+      "id": 103,
+      "title": "Чехословакия 50 крон, 1949. 70 лет со дня рождения Иосифа Сталина",
+      "description": "<strong>Масса:</strong> 10 г.<br /> <strong>Диаметр:</strong> 28 мм.<br /> <strong>Гурт:</strong> Узор.",
+      "img_path_a": "../coins_silver/czk_50k_silver_1949_a.jpg",
+      "img_path_r": "../coins_silver/czk_50k_silver_1949_r.jpg",
+      "year": "1949",
+      "material": "Серебро 0.500",
+      "price": 100,
+      "availableInventory": 1,
+      "rating": 4
+    },
+    {
+      "id": 104,
+      "title": "Чехословакия 100 крон, 1949. 70 лет со дня рождения Иосифа Сталина",
+      "description": "<strong>Масса:</strong> 14 г.<br /> <strong>Диаметр:</strong> 31 мм.<br /> <strong>Гурт:</strong> Узор.",
+      "img_path_a": "../coins_silver/czk_100k_silver_1949_a.jpg",
+      "img_path_r": "../coins_silver/czk_100k_silver_1949_r.jpg",
+      "year": "1949",
+      "material": "Серебро 0.500",
+      "price": 100,
+      "availableInventory": 1,
+      "rating": 4
+    },
+    {
+      "id": 105,
+      "title": "10 копеек 1912 г. СПБ ЭБ. Николай II.",
+      "description": "<strong>Масса:</strong> 1,8 г.<br /> <strong>Диаметр:</strong> 17,5 мм.<br /> <strong>Гурт:</strong> Рубчатый.",
+      "img_path_a": "../coins_silver/rus_10k_silver_1912_a.jpg",
+      "img_path_r": "../coins_silver/rus_10k_silver_1912_r.jpg",
+      "year": "1912",
+      "material": "Серебро 0.500",
+      "price": 100,
+      "availableInventory": 1,
+      "rating": 4
+    },
+    {
+      "id": 106,
+      "title": "15 копеек 1915 г. ВС. Николай II.",
+      "description": "<strong>Масса:</strong> 2,7 г.<br /> <strong>Диаметр:</strong> 19,7 мм.<br /> <strong>Гурт:</strong> Рубчатый.",
+      "img_path_a": "../coins_silver/rus_15k_silver_1915_a.jpg",
+      "img_path_r": "../coins_silver/rus_15k_silver_1915_r.jpg",
+      "year": "1915",
+      "material": "Серебро 0.500",
+      "price": 100,
+      "availableInventory": 1,
+      "rating": 4
+    },
+    {
+      "id": 107,
+      "title": "1 рубль 1896 г. (АГ). Николай II",
+      "description": "<strong>Масса:</strong> 20 г.<br /> <strong>Диаметр:</strong> 33,65 мм.<br /> <strong>Гурт:</strong> чистаго серебра 4 золотника 21 дол (А.Г).",
+      "img_path_a": "../coins_silver/rus_1rub_silver_1896_a_ag.jpg",
+      "img_path_r": "../coins_silver/rus_1rub_silver_1896_r_ag.jpg",
+      "year": "1896",
+      "material": "Серебро 0.900",
+      "price": 100,
+      "availableInventory": 1,
+      "rating": 4
+    },
+    {
+      "id": 108,
+      "title": "1 рубль 1896 г. (*). Николай II. На гурте звездочка. Парижский монетный двор",
+      "description": "<strong>Масса:</strong> 20 г.<br /> <strong>Диаметр:</strong> 33,65 мм.<br /> <strong>Гурт:</strong> чистаго серебра 4 золотника 21 дол *.",
+      "img_path_a": "../coins_silver/rus_1rub_silver_1896_a_zvezda.jpg",
+      "img_path_r": "../coins_silver/rus_1rub_silver_1896_r_zvezda.jpg",
+      "year": "1896",
+      "material": "Серебро 0.900",
+      "price": 100,
+      "availableInventory": 1,
+      "rating": 4
+    },
+    {
+      "id": 109,
+      "title": "20 копеек 1907 г. СПБ ЭБ. Николай II.",
+      "description": "<strong>Масса:</strong> 3,6 г.<br /> <strong>Диаметр:</strong> 22 мм.<br /> <strong>Гурт:</strong> Рубчатый.",
+      "img_path_a": "../coins_silver/rus_20k_silver_1907_a.jpg",
+      "img_path_r": "../coins_silver/rus_20k_silver_1907_r.jpg",
+      "year": "1907",
+      "material": "Серебро 0.500",
+      "price": 100,
+      "availableInventory": 1,
+      "rating": 4
+    },
+    {
+      "id": 110,
+      "title": "5 копеек 1890 г. СПБ АГ. Александр III.",
+      "description": "<strong>Масса:</strong> 0,9 г.<br /> <strong>Диаметр:</strong> 15,1 мм.<br /> <strong>Гурт:</strong> Рубчатый.",
+      "img_path_a": "../coins_silver/rus_5k_silver_1890_a.jpg",
+      "img_path_r": "../coins_silver/rus_5k_silver_1890_r.jpg",
+      "year": "1890",
+      "material": "Серебро 0.500",
+      "price": 100,
+      "availableInventory": 1,
+      "rating": 4
+    },
+    {
+      "id": 111,
+      "title": "3/4 рубля - 5 злотых 1840 года MW",
+      "description": "<strong>Масса:</strong> 15,5 г.<br /> <strong>Диаметр:</strong> 33,3 мм.<br /> <strong>Гурт:</strong> надпись.",
+      "img_path_a": "../coins_silver/rus_5zl_silver_1840_a.jpg",
+      "img_path_r": "../coins_silver/rus_5zl_silver_1840_r.jpg",
+      "year": "1840",
+      "material": "Серебро 0.868",
+      "price": 100,
+      "availableInventory": 1,
+      "rating": 2
+    },
+    {
+      "id": 10,
+      "title": "",
+      "description": "<strong>Масса:</strong> 12,8 г.<br /> <strong>Диаметр:</strong> 31 мм.<br /> <strong>Гурт:</strong> .",
+      "img_path_a": "../",
+      "img_path_r": "../",
+      "year": "",
+      "material": "",
+      "price": 100,
+      "availableInventory": 3,
+      "rating": 4
+    },
+    {
+      "id": 10,
+      "title": "",
+      "description": "<strong>Масса:</strong> 12,8 г.<br /> <strong>Диаметр:</strong> 31 мм.<br /> <strong>Гурт:</strong> .",
+      "img_path_a": "../",
+      "img_path_r": "../",
+      "year": "",
+      "material": "Серебро 0.900",
+      "price": 100,
+      "availableInventory": 3,
+      "rating": 4
+    },
+    {
+      "id": 10,
+      "title": "",
+      "description": "<strong>Масса:</strong> 12,8 г.<br /> <strong>Диаметр:</strong> 31 мм.<br /> <strong>Гурт:</strong> .",
+      "img_path_a": "../",
+      "img_path_r": "../",
+      "year": "",
+      "material": "",
+      "price": 100,
+      "availableInventory": 3,
+      "rating": 4
+    }
+  ]
+}
